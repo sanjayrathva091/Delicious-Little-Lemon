@@ -3,14 +3,43 @@
 }
 
 .App-logo {
-  height: 40vmin;
   pointer-events: none;
+  grid-area: "logo";
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.App-logo img {
+  width: 100%;
+}
+
+header {
+  display: grid;
+  grid-template-columns: 25% 1fr;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+
+.sidebar {
+  display: none;
+}
+
+.Desktop-nav {
+  grid-area: "menu";
+}
+
+.Desktop-nav ul {
+  display: flex;
+  flex: 1 1 auto;
+  gap: 1.2rem;
+  justify-content: flex-end;
+}
+
+.Mobile-nav {
+  display: none;
+}
+
+li {
+  list-style-type: none;
 }
 
 .App-header {
@@ -25,7 +54,139 @@
 }
 
 .App-link {
-  color: #61dafb;
+  color: blue;
+}
+
+.App-link li {
+  padding: 0.4rem 0;
+  font-size: 1.2rem;
+}
+.hero-section {
+  padding: 2rem 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: rgb(80, 163, 71);
+}
+.hero-section h1,
+.hero-section h2,
+.hero-section p {
+  color: #fff;
+}
+.hero-section h1 {
+  padding: 0;
+  margin: 0;
+  font-size: 3rem;
+}
+button {
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  border: 0;
+  border-radius: 0.3rem;
+  background-color: rgba(255, 255, 0);
+}
+.hero-section button:hover {
+  background-color: rgb(255, 255, 67);
+}
+
+.hero-section > div:last-child {
+  position: relative;
+}
+.HeroImage-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20em;
+  height: 20em;
+  border-radius: 1rem;
+  position: absolute;
+  top: 15%;
+  left: 20%;
+  overflow-y: hidden;
+}
+.HeroImage-box img {
+  width: 100%;
+  height: auto;
+  border-radius: 1rem;
+}
+.sub-heading {
+  padding: 4rem 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+.sub-heading h1 {
+  padding: 0;
+  margin: 0;
+  font-size: 2rem;
+}
+.card-container {
+  padding: 2rem 2rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+}
+.card img {
+  width: 100%;
+}
+footer {
+  padding: 2rem 2rem;
+  display: grid;
+  grid-template-columns: 12.5rem 1fr;
+  gap: 2.5rem;
+}
+footer > div {
+  border: 1px solid purple;
+}
+footer img {
+  width: 100%;
+}
+.foot-nav {
+  padding: 0 2.5rem;
+  display: flex;
+  flex: 1 1 auto;
+  gap: 1.25rem;
+  justify-content: flex-end;
+}
+.foot-nav li {
+  padding: 0.4rem 0;
+  font-size: 1.2rem;
+}
+@media screen and (max-width: 767px) {
+  /* Styles for phones */
+  header {
+    grid-template-columns: 1fr 1fr;
+  }
+  .App-link li {
+    font-size: 1.6rem;
+  }
+  .Desktop-nav {
+    display: none;
+  }
+  .sidebar {
+    display: block;
+  }
+  .sidebar > div {
+    text-align: end;
+  }
+  .Mobile-nav {
+    display: block;
+    position: absolute;
+    right: 2rem;
+    box-shadow: 0 2px 6px saddlebrown;
+    border-radius: 1rem;
+    background-color: #fff;
+    z-index: 100;
+  }
+  .Mobile-nav ul {
+    margin: 1rem;
+    padding: 1rem 1rem;
+  }
+  .Mobile-nav-close {
+    display: none;
+  }
+  .card-container {
+    grid-template-columns: 1fr;
+  }
 }
 
 @keyframes App-logo-spin {

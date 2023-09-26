@@ -134,9 +134,7 @@ footer {
   grid-template-columns: 12.5rem 1fr;
   gap: 2.5rem;
 }
-footer > div {
-  border: 1px solid purple;
-}
+
 footer img {
   width: 100%;
 }

@@ -9,8 +9,12 @@ const Footer = () => {
         <img src={FooterLogo} alt="footer_logo" />
       </div>
       <div className="foot-nav">
-        <nav>{<NavLinks />}</nav>
         <nav>
+          <h3>Quick Links</h3>
+          {<NavLinks />}
+        </nav>
+        <nav>
+          <h3>Social Media</h3>
           <ul>
             <Link>
               <li>Facebook</li>
@@ -27,6 +31,7 @@ const Footer = () => {
           </ul>
         </nav>
         <nav>
+          <h3>Locations</h3>
           <ul>
             <Link>
               <li>Bangalore</li>

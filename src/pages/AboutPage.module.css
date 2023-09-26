@@ -1,0 +1,72 @@
+.AboutPage {
+  padding: 2rem 2rem;
+  background-color: rgb(80, 163, 71);
+}
+
+.AboutPage > div {
+  margin-bottom: 1rem;
+}
+
+h2 {
+  color: yellow;
+}
+
+p {
+  text-align: center;
+  color: #fff;
+}
+
+.AboutPage > div:first-child {
+  text-align: center;
+  background-color: rgb(80, 163, 71);
+}
+
+h2 {
+  font-size: 4rem;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+p {
+  font-size: 1.2rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.OurStory {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  place-items: center;
+}
+
+.OurStory img {
+  width: 100%;
+}
+
+.PhilosophyContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.PhilosophyCard {
+  padding: 1.2rem 1.2rem;
+  border: 2px dashed #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.OurMenu {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  place-items: center;
+}
+
+.PrivateDining {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  place-items: center;
+  text-align: center;
+}
